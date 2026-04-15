@@ -5,22 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up</title>
     <link rel="stylesheet" href="styles.css">
+    <style>@font-face {
+        font-family: 'zendots';
+        src: url("fonts/ZenDots-Regular.woff") format(woff),
+            url('fonts/ZenDots-Regular.woff2') format(woff2);
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+    }
+    </style>
 </head>
 <body>
-    <div id="leftpanel">
-        <img src="img/360.jpg" width="50%">
-    </div>
-    <div id="rightpanel">
-        <p>Remember the Xbox 360? Of course you do! Now sign up to this imaginary website
-            to not receive updates on this console that has been out of production
-            for over a decade.
-        </p>
-        <p>You <em>know</em> you want to.</p>
+    <div id="container">
+        <div id="leftpanel">
+            <img src="img/360.jpg">
+            <figcaption>Photo by Evan Amos</figcaption>
+            <div id="banner">
+                <h1><img src="img/logo.png" style="width:30px;height:30px" >  XBOX</h1>
+            </div>
+        </div>
+        <div id="rightpanel">
+            <h2>Remember the Xbox 360? Of course you do! Now sign up to this imaginary website
+                to not receive updates on this console that has been out of production
+                for over a decade.
+            </h2>
+            <h2>You <em>know</em> you want to.</h2>
 
-        <fieldset>
-            <legend>Let's do this!</legend>
-
-        </fieldset>
+            <fieldset>
+                <legend>Let's do this!</legend>
+                    <div id="leftinput">
+                        <label for="firstname">First Name</label>
+                        <input id="firstname" name="firstname">
+                        <label for="email">Email</label>
+                        <input id="email" name="email">
+                        <label for="pass">Password</label>
+                        <input id="pass" name="pass" required>
+                    </div>
+                    <div id="rightinput">
+                        <label for="lastname">Last Name</label>
+                        <input id="lastname" name="lastname">
+                        <label for="number">Phone Number</label>
+                        <input type="tel" id="number" name="number">
+                        <label for="confirm">Confirm Password</label>
+                        <input id="confirm" name="confirm" required>
+                    </div>
+            </fieldset>
+            <div id="sub">
+                <button id="acct">Create Account</button>
+                <p>Already have an account? <a href="https://commons.wikimedia.org/wiki/User:Evan-Amos" target="_blank" rel="noopener noreferrer">Log In</a></p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
